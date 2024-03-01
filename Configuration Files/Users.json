@@ -1,0 +1,14 @@
+ {  
+   "AM_User1":{  
+      "UserName":"john.doe@magic-am.com",
+      "Password":"magic"
+   },
+   "Bank_User1":{  
+      "UserName":"john.doe@abcbank.com",
+      "Password":"investa"
+   },
+   "Admin_User1":{  
+      "UserName":"atul.ranjan@magicfinserv.com",
+      "Password":"magic"
+   }
+}

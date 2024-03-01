@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SauceSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="SauceLoginTest(failed)">
+    <classes>
+      <class name="SauceDemoProjectTests.LoginTest">
+        <methods>
+          <include name="verifyLoginTest" invocation-numbers="1"/>
+          <include name="getDriver"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- SauceDemoProjectTests.LoginTest -->
+    </classes>
+  </test> <!-- SauceLoginTest(failed) -->
+</suite> <!-- Failed suite [SauceSuite] -->
