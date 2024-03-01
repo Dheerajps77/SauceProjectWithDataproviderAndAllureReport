@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SauceSuite" class="navigator-link">
-              <span class="suite-name border-failed">SauceSuite</span>
+              <span class="suite-name border-passed">SauceSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-SauceSuite" class="hide-methods failed suite-SauceSuite"> (hide)</a> <!-- hide-methods failed suite-SauceSuite -->
-                      <a href="#" panel-name="suite-SauceSuite" class="show-methods failed suite-SauceSuite"> (show)</a> <!-- show-methods failed suite-SauceSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-SauceSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceSuite" title="SauceDemoProjectTests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginTest(locked_out_user, secret_sauce)">verifyLoginTest(locked_out_user, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-SauceSuite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,26 +102,6 @@
                       <a href="#" panel-name="suite-SauceSuite" class="show-methods passed suite-SauceSuite"> (show)</a> <!-- show-methods passed suite-SauceSuite -->
                     </span>
                     <div class="method-list-content passed suite-SauceSuite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceSuite" title="SauceDemoProjectTests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginTest(problem_user, secret_sauce)">verifyLoginTest(problem_user, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceSuite" title="SauceDemoProjectTests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginTest(performance_glitch_user, secret_sauce)">verifyLoginTest(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceSuite" title="SauceDemoProjectTests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginTest(error_user, secret_sauce)">verifyLoginTest(error_user, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceSuite" title="SauceDemoProjectTests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginTest(standard_user, secret_sauce)">verifyLoginTest(standard_user, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SauceSuite" title="SauceDemoProjectTests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginTest(visual_user, secret_sauce)">verifyLoginTest(visual_user, secret_sauce)</a> <!-- method navigator-link -->
@@ -153,93 +119,12 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SauceSuite" class="panel SauceSuite">
-          <div class="suite-SauceSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">SauceDemoProjectTests.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginTest(locked_out_user, secret_sauce)">
-                  </a> <!-- verifyLoginTest(locked_out_user, secret_sauce) -->
-                  <span class="method-name">verifyLoginTest</span>
-                  <span class="parameters">(locked_out_user, secret_sauce)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@id=&apos;react-burger-menu-btn&apos;] (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at Utils.SeleniumUtils.waitForElementPresence(SeleniumUtils.java:40)
-	at SauceDemoProjectPages.LoginPage.clickOnHamburgerButton(LoginPage.java:56)
-	at SauceDemoProjectTests.LoginTest.verifyLoginTest(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;react-burger-menu-btn&apos;]&quot;}
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;RAHUL&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61ebfe49a4a8e8a16a36c2e35190a1f5, findElement {using=xpath, value=//button[@id=&apos;react-burger-menu-btn&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\thrah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56919/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61ebfe49a4a8e8a16a36c2e35190a1f5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 31 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SauceSuite-class-failed -->
           <div class="suite-SauceSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">SauceDemoProjectTests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginTest(problem_user, secret_sauce)">
-                  </a> <!-- verifyLoginTest(problem_user, secret_sauce) -->
-                  <span class="method-name">verifyLoginTest</span>
-                  <span class="parameters">(problem_user, secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginTest(performance_glitch_user, secret_sauce)">
-                  </a> <!-- verifyLoginTest(performance_glitch_user, secret_sauce) -->
-                  <span class="method-name">verifyLoginTest</span>
-                  <span class="parameters">(performance_glitch_user, secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginTest(error_user, secret_sauce)">
-                  </a> <!-- verifyLoginTest(error_user, secret_sauce) -->
-                  <span class="method-name">verifyLoginTest</span>
-                  <span class="parameters">(error_user, secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginTest(standard_user, secret_sauce)">
-                  </a> <!-- verifyLoginTest(standard_user, secret_sauce) -->
-                  <span class="method-name">verifyLoginTest</span>
-                  <span class="parameters">(standard_user, secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyLoginTest(visual_user, secret_sauce)">
@@ -307,36 +192,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginTest')
 data.setCell(0, 2, 'SauceDemoProjectTests.LoginTest')
-data.setCell(0, 3, 25091);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginTest')
-data.setCell(1, 2, 'SauceDemoProjectTests.LoginTest')
-data.setCell(1, 3, 14232);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLoginTest')
-data.setCell(2, 2, 'SauceDemoProjectTests.LoginTest')
-data.setCell(2, 3, 9453);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLoginTest')
-data.setCell(3, 2, 'SauceDemoProjectTests.LoginTest')
-data.setCell(3, 3, 9229);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyLoginTest')
-data.setCell(4, 2, 'SauceDemoProjectTests.LoginTest')
-data.setCell(4, 3, 9183);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyLoginTest')
-data.setCell(5, 2, 'SauceDemoProjectTests.LoginTest')
-data.setCell(5, 3, 9173);
+data.setCell(0, 3, 9061);
 window.suiteTableData['SauceSuite']= { tableData: data, tableDiv: 'times-div-SauceSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-SauceSuite">
               </div> <!-- times-div-SauceSuite -->
             </div> <!-- times-div -->
@@ -368,34 +233,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">verifyLoginTest(standard_user, secret_sauce)</span>
-                <span class="method-start">4376 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLoginTest(locked_out_user, secret_sauce)</span>
-                <span class="method-start">14034 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginTest(problem_user, secret_sauce)</span>
-                <span class="method-start">39135 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginTest(performance_glitch_user, secret_sauce)</span>
-                <span class="method-start">48374 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginTest(error_user, secret_sauce)</span>
-                <span class="method-start">62611 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">verifyLoginTest(visual_user, secret_sauce)</span>
-                <span class="method-start">71799 ms</span>
+                <span class="method-start">4251 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">81015 ms</span>
+                <span class="method-start">13434 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

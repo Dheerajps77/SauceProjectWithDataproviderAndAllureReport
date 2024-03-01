@@ -36,7 +36,7 @@ public class LoginTest extends TestBaseForOtherTests {
 	
 	@DataProvider(name="UserDataDataprovider")
 	public Object[][] userData(){
-		Object[][] userDataValues;
+		Object[][] userDataValues = null;
 		try {
 			loginPage=new LoginPage(driver);
 			userCredsList=loginPage.getUserName();
@@ -47,8 +47,8 @@ public class LoginTest extends TestBaseForOtherTests {
 				{userCredsList.get(4), "secret_sauce"},
 				{userCredsList.get(5), "secret_sauce"},
 				{userCredsList.get(6), "secret_sauce"}
-			};
-			userDataValues=userDataValues1;
+			}; 
+			userDataValues =userDataValues1;
 		} catch (Exception e) {
 			throw e;
 		}
