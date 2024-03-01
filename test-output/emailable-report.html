@@ -9,46 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">SauceSuite</th></tr>
-<tr><td><a href="#t0">SauceLoginTest</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">81,347</td><td></td><td></td></tr>
+<tr><td><a href="#t0">SauceLoginTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,685</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauceSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SauceLoginTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SauceDemoProjectTests.LoginTest</td><td><a href="#m0">verifyLoginTest</a></td><td rowspan="1">1709225954622</td><td rowspan="1">25091</td></tr><tr><th colspan="4">SauceLoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">SauceDemoProjectTests.LoginTest</td><td><a href="#m1">verifyLoginTest</a></td><td rowspan="5">1709225979723</td><td rowspan="5">9229</td></tr><tr class="passedeven"><td><a href="#m2">verifyLoginTest</a></td></tr><tr class="passedeven"><td><a href="#m3">verifyLoginTest</a></td></tr><tr class="passedeven"><td><a href="#m4">verifyLoginTest</a></td></tr><tr class="passedeven"><td><a href="#m5">verifyLoginTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauceSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SauceLoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">SauceDemoProjectTests.LoginTest</td><td><a href="#m0">verifyLoginTest</a></td><td rowspan="1">1709278949731</td><td rowspan="1">9061</td></tr></tbody>
 </table>
-<h2>SauceLoginTest</h2><h3 id="m0">SauceDemoProjectTests.LoginTest#verifyLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>locked_out_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@id=&apos;react-burger-menu-btn&apos;] (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at Utils.SeleniumUtils.waitForElementPresence(SeleniumUtils.java:40)
-	at SauceDemoProjectPages.LoginPage.clickOnHamburgerButton(LoginPage.java:56)
-	at SauceDemoProjectTests.LoginTest.verifyLoginTest(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;react-burger-menu-btn&apos;]&quot;}
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;RAHUL&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61ebfe49a4a8e8a16a36c2e35190a1f5, findElement {using=xpath, value=//button[@id=&apos;react-burger-menu-btn&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\thrah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56919/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61ebfe49a4a8e8a16a36c2e35190a1f5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 31 more
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SauceDemoProjectTests.LoginTest#verifyLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>problem_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">SauceDemoProjectTests.LoginTest#verifyLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>performance_glitch_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">SauceDemoProjectTests.LoginTest#verifyLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>error_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">SauceDemoProjectTests.LoginTest#verifyLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">SauceDemoProjectTests.LoginTest#verifyLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>visual_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SauceLoginTest</h2><h3 id="m0">SauceDemoProjectTests.LoginTest#verifyLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>visual_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

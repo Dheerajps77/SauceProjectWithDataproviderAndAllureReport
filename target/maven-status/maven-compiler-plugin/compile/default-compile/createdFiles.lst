@@ -1,10 +1,10 @@
 Utils\UserFunctions.class
-ListenersUtility\Retry.class
 TestBase\TestBase.class
 ListenersUtility\AnnotationTransformer.class
+Utils\SeleniumUtils.class
+ListenersUtility\Retry.class
 Utils\TestExecutionListener.class
 TestBase\TestBaseForOtherTests.class
 SauceDemoProjectPages\LoginPage.class
 Utils\GenericUtils.class
-Utils\SeleniumUtils.class
 Utils\PropertiesManager.class
