@@ -21,7 +21,6 @@ public class TestBaseForOtherTests {
 	@BeforeTest(alwaysRun = true)
 	@Parameters({ "browser" })
 	public void getDriver(String browser) throws MalformedURLException {
-
 		try {
 			System.out.println("Test is running on " + browser);
 			if (browser.equals("firefox")) {

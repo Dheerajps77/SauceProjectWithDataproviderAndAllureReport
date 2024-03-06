@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-01T13:53:06 IST" name="SauceSuite" finished-at="2024-03-01T13:54:25 IST" duration-ms="79581">
+  <suite started-at="2024-03-03T21:16:04 IST" name="SauceSuite" finished-at="2024-03-03T21:17:26 IST" duration-ms="82092">
     <groups>
     </groups>
-    <test started-at="2024-03-01T13:53:06 IST" name="SauceLoginTest" finished-at="2024-03-01T13:54:25 IST" duration-ms="79581">
+    <test started-at="2024-03-03T21:16:04 IST" name="SauceLoginTest" finished-at="2024-03-03T21:17:26 IST" duration-ms="82092">
       <class name="SauceDemoProjectTests.LoginTest">
-        <test-method is-config="true" signature="getDriver(java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@7fc645e4]" started-at="2024-03-01T13:53:06 IST" name="getDriver" finished-at="2024-03-01T13:53:10 IST" duration-ms="4595" status="PASS">
+        <test-method is-config="true" signature="getDriver(java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@15bc339]" started-at="2024-03-03T21:16:04 IST" name="getDriver" finished-at="2024-03-03T21:16:08 IST" duration-ms="4574" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@7fc645e4]" started-at="2024-03-01T13:53:10 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-01T13:53:19 IST" duration-ms="9027" status="PASS">
+        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@15bc339]" started-at="2024-03-03T21:16:09 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-03T21:16:18 IST" duration-ms="9602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@7fc645e4]" started-at="2024-03-01T13:53:20 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-01T13:53:44 IST" duration-ms="24789" status="FAIL">
+        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@15bc339]" started-at="2024-03-03T21:16:18 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-03T21:16:43 IST" duration-ms="25023" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -94,11 +94,11 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: chrome=122.0.6261.95)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'RAHUL', ip: '192.168.0.100', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+System info: host: 'RAHUL', ip: '192.168.1.25', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2dce990f856151a31409ef2dc6ccfe29, findElement {using=xpath, value=//button[@id='react-burger-menu-btn']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\thrah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59402/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2dce990f856151a31409ef2dc6ccfe29
+Command: [36fb8131e2ddcedc6bf050d71cc2c6ba, findElement {using=xpath, value=//button[@id='react-burger-menu-btn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\thrah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51394/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36fb8131e2ddcedc6bf050d71cc2c6ba
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -124,7 +124,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@7fc645e4]" started-at="2024-03-01T13:53:44 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-01T13:53:53 IST" duration-ms="8893" status="PASS">
+        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@15bc339]" started-at="2024-03-03T21:16:43 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-03T21:16:53 IST" duration-ms="9281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -140,7 +140,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@7fc645e4]" started-at="2024-03-01T13:53:53 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-01T13:54:07 IST" duration-ms="13887" status="PASS">
+        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@15bc339]" started-at="2024-03-03T21:16:53 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-03T21:17:07 IST" duration-ms="14146" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@7fc645e4]" started-at="2024-03-01T13:54:07 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-01T13:54:16 IST" duration-ms="8852" status="PASS">
+        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@15bc339]" started-at="2024-03-03T21:17:07 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-03T21:17:16 IST" duration-ms="9123" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,7 +172,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@7fc645e4]" started-at="2024-03-01T13:54:16 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-01T13:54:25 IST" duration-ms="8859" status="PASS">
+        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:SauceDemoProjectTests.LoginTest@15bc339]" started-at="2024-03-03T21:17:16 IST" name="verifyLoginTest" data-provider="UserDataDataprovider" finished-at="2024-03-03T21:17:25 IST" duration-ms="9118" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -188,7 +188,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SauceDemoProjectTests.LoginTest@7fc645e4]" started-at="2024-03-01T13:54:25 IST" name="closeBrowser" finished-at="2024-03-01T13:54:25 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SauceDemoProjectTests.LoginTest@15bc339]" started-at="2024-03-03T21:17:25 IST" name="closeBrowser" finished-at="2024-03-03T21:17:26 IST" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
